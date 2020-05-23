@@ -25,3 +25,14 @@ Goal of this test is to assert (to some degree) your coding and architectural sk
 * Coding style guides, for example PSR-2
 
 Good luck!
+
+
+### Submission details
+
+  #### login   
+  * methods - [POST,GET]
+  * url - /login
+  
+  #### signup
+  * methods - [POST,GET]
+  * url - /signup
