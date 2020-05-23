@@ -35,17 +35,17 @@ app.get("/signup", function (req, res) {
 // API
 app.post("/login", async function (req, res) {
   const user = new userController();
-  const token = await user.login(req.body.email, req.body.password);
+  const data = await user.login(req.body.email, req.body.password);
   return res.json({
-    token
+    data
   });
 });
 app.post("/signup", async function (req, res) {
   const user = new userController();
-  const token = await user.signup(req.body);
-  return res.json({
-    success: true
-  });
+  const data = await user.signup(req.body);
+  return res.json(
+    data
+  );
 });
 
 
